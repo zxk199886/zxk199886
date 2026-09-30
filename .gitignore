@@ -1,0 +1,13 @@
+.anchor
+.DS_Store
+target
+**/*.rs.bk
+node_modules
+test-ledger
+.next
+out
+dist
+*.tsbuildinfo
+.env*.local
+indexer/data
+next-env.d.ts
