@@ -9,7 +9,12 @@
     "test:rust": "cargo test -p unknown --lib",
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",
-    "build:cpmm": "bash scripts/build-cpmm-localnet.sh"
+    "build:cpmm": "bash scripts/build-cpmm-localnet.sh",
+    "bootstrap": "tsx scripts/bootstrap.ts",
+    "localnet": "bash scripts/localnet.sh",
+    "indexer": "pnpm --filter @unknown/indexer start",
+    "app": "pnpm --filter @unknown/app dev",
+    "demo": "tsx scripts/demo.ts"
   },
   "devDependencies": {
     "@coral-xyz/anchor": "^0.32.1",
@@ -23,7 +28,8 @@
     "mocha": "^10.8.2",
     "ts-mocha": "^10.1.0",
     "typescript": "^5.8.3",
-    "@unknown/sdk": "workspace:*"
+    "@unknown/sdk": "workspace:*",
+    "tsx": "^4.19.4"
   },
   "packageManager": "pnpm@10.33.0"
 }
